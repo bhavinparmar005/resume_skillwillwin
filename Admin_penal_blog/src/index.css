@@ -1,0 +1,174 @@
+@font-face {
+  font-family: AnekGujarati-Medium;
+  src: url("/AnekGujarati-Medium.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: AnekGujarati-Medium;
+}
+
+/* Custom dropdown items */
+.dropdown-item-custom {
+  color: #000 !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-toggle::after {
+  color: black !important;
+  font: 24px;
+}
+
+.custom-thead {
+  background-color: #f9f9f9 !important;
+  color: #555353ff !important;
+}
+
+.dropdown-item-custom:hover {
+  background-color: #f8f9fa !important;
+  /* Bootstrap ka light grey hover */
+  color: #000 !important;
+}
+
+.dropdown-item-custom:focus,
+.dropdown-item-custom:active {
+  background-color: transparent !important;
+  color: #000 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* 👇 Input focus border remove */
+.no-focus:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #ced4da !important;
+  /* default border maintain */
+}
+
+/* 👇 Remove hover effect from button */
+.no-hover:hover,
+.no-hover:focus {
+  background-color: inherit !important;
+  border-color: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+/* Custom login card responsive */
+.login-card {
+  min-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .login-card {
+    min-width: 400px;
+  }
+}
+
+.Read_button:hover {
+  color: #ffffff !important;
+  background-color: #2c7864 !important;
+}
+
+.custom-btn {
+  border: 1px solid #2c7864 !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+  width: 200px !important;
+  height: 42px !important;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  /* text ek line me rahe */
+  overflow: hidden;
+  /* extra text hide ho jaye */
+  text-overflow: ellipsis;
+  /* end me ... dikhe */
+}
+
+/* Hover does nothing */
+
+/* Active/Clicked state */
+.custom-btn.active-btn {
+  background-color: #2c7864 !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+
+.my {
+  width: 960px;
+  font-size: 28px;
+  border: 1px solid black;
+  color: red;
+  font-family: Verdana !important;
+  font-weight: 900;
+}
+
+.ql-container {
+  height: 140px !important;
+  /* editor area fix height */
+}
+
+.ql-editor {
+  min-height: 300px !important;
+  /* likhne ka area */
+  max-height: 140px !important;
+  /* scroll enable ho jayega */
+  overflow-y: auto !important;
+}
+
+.custom-quill .ql-container {
+  border: 1px solid #ced4da;
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  min-height: 300px;
+  /* minimum height */
+}
+
+.custom-quill .ql-editor {
+  min-height: 300px;
+  padding: 12px;
+  line-height: 1.5;
+}
+
+.modal-body iframe {
+    display: block;       /* makes iframe a block element */
+  /* centers it horizontally and adds bottom margin */
+    max-width: 100%;      /* responsive width */
+    height: 315px;        /* keep height as needed */
+    border-radius: 12px;  /* optional */
+}
+
+
+/* .modal-body iframe {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 100%;
+    height: 315px;
+    border-radius: 12px;
+} */
+.video-wrapper > p{
+  margin: 0px;
+}
+.modal-body .video-wrapper {
+    text-align: start;      /* center the iframe */
+ 
+}
+
+.modal-body .video-wrapper iframe {
+    display: inline-block;   
+    width: 100%;             
+    max-width: 100%;        
+    height: 400px;         
+    border-radius: 12px;
+}

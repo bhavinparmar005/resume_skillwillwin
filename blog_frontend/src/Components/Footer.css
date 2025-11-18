@@ -1,0 +1,117 @@
+
+
+
+.mian_copiright {
+  width: 1200px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+footer {
+  width: 100%;
+  height: 68px;
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 24px;
+
+}
+.copiright {
+  width: 430px;
+  height: 20px;
+  /* border: 1px solid wheat; */
+  color: #ffffff;
+}
+.copiright > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: AnekGujarati-Regular;
+}
+.policy_main {
+  width: 240px;
+  height: 20px;
+  /* border: 1px solid wheat; */
+  color: #828282;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.policy_main > p {
+  display: inline;
+  cursor: pointer;
+  font-size: 16px;
+  font-family:  AnekGujarati-Regular;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+@media (max-width : 1280px) {
+
+  footer {
+    padding: 0px 3.125%;
+  } 
+  
+  .copiright {
+    width: auto;
+  }
+
+}
+
+@media (max-width : 920px) {
+  
+  footer {
+    padding: 0px 4.1304347826%;
+  }
+
+}
+
+@media (max-width : 768px) {
+
+  footer {
+    height: 64px;
+    padding: 10px 20px;
+    margin-top: 32px;
+  }  
+
+  .copiright,
+  .policy_main {
+    height: auto;
+  }
+
+  .copiright > p {
+    line-height: 24px;
+  }
+
+}
+
+@media (max-width : 656px) {
+  
+  footer {
+    height: auto;
+    padding: 8px 0px;
+  }
+
+  .mian_copiright {
+    height: auto;
+    gap: 6px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mian_copiright p {
+    text-align: center;
+  }
+
+  .policy_main {
+    flex-direction: column-reverse;
+  }
+
+  .policy_main > p:nth-child(2) {
+    margin-bottom: 8px;
+  }
+
+}

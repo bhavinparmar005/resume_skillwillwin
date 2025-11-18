@@ -1,0 +1,435 @@
+header {
+  width: 100dvw;
+  height: auto;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #0000001f;
+
+}
+
+nav {
+  width: 1200px;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 34px; */
+}
+
+.main_title {
+  width: 200px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.main_title>img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar_login_button {
+  width: 131px;
+  height: 40px;
+  border: none;
+  background-color: #2C7864;
+  border-radius: 10px;
+  color: #ffffff;
+  line-height: 14px;
+  font-weight: 600;
+  font-family: AnekGujarati-Bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Overlay background when popup is open */
+.popup_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Popup box */
+.popup {
+  position: relative;
+  width: 440px;
+  height: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  color: black;
+}
+
+.login_heading_main {
+  width: 100%;
+  height: 32px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading_title {
+  width: 350px;
+  height: 32px;
+  /* border: 1px solid red; */
+}
+
+.heading_title>p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #161616;
+  font-weight: 700;
+  font-family: AnekGujarati-Bold;
+}
+
+.close_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  /* border: 1px solid blue; */
+}
+
+.close_icon>img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 300px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #828282;
+  font-size: 16px;
+  margin-top: 6px;
+  font-family: AnekGujarati-Regular;
+}
+
+.label_for_email {
+  font-weight: 500;
+  margin-top: 20px;
+  width: 317px;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  /* border: 1px solid black;   */
+  color: #161616;
+  font-family: AnekGujarati-Medium;
+}
+
+.input_email_main {
+  width: 100%;
+  height: 44px;
+  background: #f9f9f9;
+  margin-top: 6px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  border: 1px solid #0000001f;
+}
+
+.email_icon {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+}
+
+.email_icon>img {
+  width: 100%;
+  height: 100%;
+}
+
+.input_type_email {
+  width: 83.5%;
+  height: 30px;
+  /* border: 1px solid black; */
+  margin-left: 12px;
+}
+
+.input_type_email>input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  color: #828282;
+  font-size: 16px;
+  background-color: transparent;
+  font-family: AnekGujarati-Medium;
+}
+
+.input_type_email>input::placeholder {
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.show_password_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+
+.show_password_icon>img {
+  width: 100%;
+  height: 100%;
+}
+
+.login_button_form {
+  width: 100%;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #2C7864;
+}
+
+.login_button_form>button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: 2%;
+  cursor: pointer;
+  font-family: AnekGujarati-SemiBold;
+}
+
+.reset_password {
+  width: 100%;
+  height: 20px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+.reset_password>p {
+  text-align: center;
+  color: #828282;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: AnekGujarati-SemiBold;
+}
+
+.reset_password>p>a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ab541f;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: AnekGujarati-SemiBold;
+  margin-left: 5px;
+}
+
+.flex_box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  cursor: pointer;
+  flex-shrink: 0;
+  /* border: 1px solid black; */
+}
+
+.dropdown_main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.school_icon_dropdown {
+  width: 28px;
+  height: 28px;
+  /* border: 1px solid orange; */
+  flex-shrink: 0;
+}
+
+.school_icon_dropdown>img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar_school_name {
+  font-family: AnekGujarati-SemiBold;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #161616;
+  margin-left: 12px;
+  margin-top: 5px;
+  /* border: 1px solid black; */
+ white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+.dropdown_icon {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  margin-left: 10px;
+}
+
+.dropdown_icon>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdown-menu {
+  width: 173px;
+  height: 88px;
+  background-color: #ffffff;
+  /* margin-top: 300px; */
+  margin-top: 42px;
+  position: absolute;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #0000001f;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown_change_password {
+  font-family:  AnekGujarati-Medium;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #161616;
+  letter-spacing: 1px;
+}
+
+.dropdown_logout_password {
+  font-family: AnekGujarati-Medium;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ff0000;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+
+/* reset_password  */
+
+
+@media (max-width : 1280px) {
+  header {
+    padding: 0px 3.125%;
+  }
+}
+
+@media (max-width : 920px) {
+  header {
+    padding: 0px 4.1304347826%;
+  }
+}
+
+@media (max-width : 584px) {
+
+  header,
+  .popup_overlay {
+    padding: 0px 6.1643835616%;
+  }
+}
+
+@media (max-width : 502px) {
+  .popup {
+    width: 100%;
+  }
+
+  .login_heading_main {
+    height: auto;
+  }
+
+  .heading_title>p {
+    font-size: 1.125rem;
+  }
+
+  .heading_title {
+    height: auto;
+    width: auto;
+  }
+
+  .close_icon {
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+  }
+
+  .show_password_icon {
+    margin-right: 6px;
+  }
+
+}
+
+@media (max-width : 420px) {
+
+  header {
+    height: 64px;
+  }
+
+  nav {
+    height: 100%;
+  }
+
+  .main_title {
+    width: 140px;
+  }
+
+  .navbar_login_button {
+    height: 34px;
+    width: 80px;
+  }
+
+}
+
+@media (max-width : 380px) {
+
+  .main_title {
+    width: 100px;
+  }
+
+  .school_icon_dropdown {
+    width: 20px;
+    height: 20px;
+    margin-top: -4px;
+  }
+
+  .navbar_school_name {
+    font-size: 14px;
+    margin-left: 6px;
+  }
+
+  .dropdown_icon {
+    margin-left: 2px;
+  }
+
+  .dropdown-menu {
+    margin-right: 42px;
+  }
+
+}

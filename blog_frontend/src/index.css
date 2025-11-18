@@ -1,0 +1,298 @@
+@font-face {
+  font-family: AnekGujarati-Bold;
+  src: url("/AnekGujarati-Bold.ttf");
+}
+
+@font-face {
+  font-family: AnekGujarati-ExtraBold;
+  src: url("/AnekGujarati-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: AnekGujarati-Medium;
+  src: url("/AnekGujarati-Medium.ttf");
+}
+
+@font-face {
+  font-family: AnekGujarati-Regular;
+  src: url("/AnekGujarati-Regular.ttf");
+}
+
+@font-face {
+  font-family: AnekGujarati-SemiBold;
+  src: url("/AnekGujarati-SemiBold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  align-items: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body>div:nth-child(4),
+body>div:nth-child(5),
+body>div:nth-child(6) {
+  display: none;
+}
+
+
+
+/* Blog_Listing_Page.css */
+.skeleton {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 180px;
+}
+
+.skeleton-title {
+  width: 70%;
+  height: 20px;
+  margin: 10px 0;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 14px;
+  margin: 5px 0;
+}
+
+.developer p {
+  margin: 0;
+  font-weight: 500;
+  font-family: AnekGujarati-SemiBold;
+
+  color: #828282;
+  /* tu chahe to apna theme color dal sakta hai */
+}
+
+
+
+/* pop worning */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* popup box */
+.popup-box {
+  width: 560px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.main_access_modal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.access_title>p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: AnekGujarati-Bold;
+  color: #161616;
+  text-align: start;
+}
+
+.access_close_icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.access_close_icon>img {
+  width: 100%;
+  height: 100%;
+}
+
+.access_subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 8px;
+  color: #828282;
+  font-family: AnekGujarati-Regular;
+  text-align: start;
+}
+
+.access_contect_main {
+  width: 100%;
+  background-color: #AB541F;
+  margin-top: 20px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.access_contect_icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+
+.access_contect_icon>img {
+  width: 100%;
+  height: 100%;
+}
+
+.access_number {
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+
+.access_number_text {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  font-family: AnekGujarati-Medium;
+  text-align: start;
+}
+
+.access_Contect_number {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: AnekGujarati-Bold;
+  text-align: start;
+
+
+}
+
+.access_already_account_text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #161616;
+  font-family: AnekGujarati-Medium;
+  margin-top: 30px;
+}
+
+.access_Login_button {
+  margin-top: 12px;
+  width: 100%;
+  height: 48px;
+  background-color: #2C7864;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: AnekGujarati-SemiBold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width:584px) {
+  .popup-overlay {
+    padding: 0px 5.1643835616%;
+  }
+
+  .access_title>p {
+    font-size: 18px;
+    text-align: start;
+    line-height: 18px;
+  }
+
+  .access_subtitle {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .popup-box {
+    padding: 25px
+  }
+
+}
+
+@media (max-width:500px) {
+  .access_contect_main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .access_contect_icon {
+    margin-top: 10px;
+  }
+
+  .access_number {
+    margin-left: 0px;
+  }
+
+  .access_Contect_number {
+    font-size: 24px;
+  }
+
+  .access_Contect_number {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .access_number_text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .access_already_account_text {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .access_number_text {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+}

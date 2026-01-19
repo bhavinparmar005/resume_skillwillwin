@@ -41,4 +41,4 @@ router.post("/admincheckotp", adminTbl.admincheckotp); // Admin check OPT For fo
 router.post("/adminupdatepassword", adminTbl.adminPasswordUpdate); // Admin Update Password
 router.post("/adminresetpassword", adminTbl.adminResetPassword); // Admin reset Password
 
-module.exports = route;
+module.exports = router;

@@ -14,7 +14,7 @@ const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: "skillBlogImage",
-    allowed_formats: ["jpeg", "png", "jpg"],
+    allowed_formats: ["jpeg", "png", "jpg","avif","webp"],
     transformation: [{ quality: "auto", fetch_format: "auto" }],
   },
 });
